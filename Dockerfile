@@ -15,7 +15,7 @@
 FROM alpine
 MAINTAINER Michael Venezia <mvenezia@gmail.com>
 
-RUN wget http://storage.googleapis.com/kubernetes-release/release/v1.2.0/bin/linux/amd64/kubectl && \
+RUN wget http://storage.googleapis.com/kubernetes-release/release/v1.7.4/bin/linux/amd64/kubectl && \
     chmod a+x /kubectl
 
 ENTRYPOINT ["/kubectl"]
